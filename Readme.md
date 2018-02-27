@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Константин Соловьев](https://up.htmlacademy.ru/htmlcss/20/user/509305).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Солодухин] (https://htmlacademy.ru/profile/nikolaysolodukhin).
 
 ---
 
