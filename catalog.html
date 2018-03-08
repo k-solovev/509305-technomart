@@ -5,6 +5,7 @@
   <title>Техномарт &laquo;Каталог&raquo;</title>
   <meta charset="utf-8">
 </head>
+
 <body>
   <header class="page-header">
     <div class="header-top">
@@ -39,7 +40,7 @@
     <div class="user-menu">
       <ul class="user-menu-list">
         <li class="user-menu-profile">
-          <a class="user-menu-button href=" # "">Равшан Джамшутович</a>
+          <a class="user-menu-button" href="#">Равшан Джамшутович</a>
         </li>
         <li class="user-submenu">
           <ul class="user-submenu-list">
@@ -62,7 +63,7 @@
           <a class="navigation-item-link" href="#">Компания</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-item-link" href="catalog.html">Каталог</a>
+          <a class="navigation-item-link">Каталог</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-item-link" href="#">Новости</a>
@@ -94,35 +95,32 @@
     <h2 class="section-title">Перфораторы</h2>
     <section class="filter-sidebar">
       <h2 class="filter-title">Фильтр</h2>
-      <form class="form-range-price">
-        <label>
-          <h3 class="filter-item-title">Цена:</h3>
-          <input type="range" name="range-price" class="range-price" min="0" max="30000">
-        </label>
-        <p class="filter-text">от</p>
-        <input type="text" name="min-price" class="min-price">
-        <p class="filter-text">до</p>
-        <input type="text" name="max-price" class="max-price">
-      </form>
-      <form action="#" method="get" class="form-manufacturers">
-        <h3 class="filter-item-title">Производители:</h3>
-        <input type="checkbox" name="option1" class="manufacturer-item" checked>
-        <input type="checkbox" name="option2" class="manufacturer-item">
-        <input type="checkbox" name="option3" class="manufacturer-item" checked>
-        <input type="checkbox" name="option4" class="manufacturer-item">
-        <input type="checkbox" name="option5" class="manufacturer-item">
-      </form>
-      <form action="#" method="get" class="form-supply">
-        <h3 class="filter-item-title">Питание:</h3>
-        <p class="form-supply-wrapper">
-          <input type="radio" name="supply-button" class="supply-button" value="">Аккумуляторные
-      	</p>
-        <p class="form-supply-wrapper">
-          <input type="radio" name="supply-button" class="supply-button" value="">Сетевые
-      	</p>
-      </form>
-      <form action="#" method="get" class="form-result-button">
-        <button class="show-result">Показать</button>
+      <form class="filter">
+        <section class="section-price">
+          <h3 class="price-title">Цена:</h3>
+          <input type="range" name="price-select" class="price-select" min="0" max="30000" value="15000">
+        </section>
+        <section class="section-manufacturers">
+          <h4 class="manufacturers-title">Производители:</h4>
+          <input type="checkbox" name="manufacturers-select" class="manufacturers-select" id="bosch" value="bosch" checked>
+          <label for="bosch" class="manufacturers-select-label">Bosch</label>
+          <input type="checkbox" name="manufacturers-select" class="manufacturers-select" id="interskol" value="interskol">
+          <label for="interskol" class="manufacturers-select-label">Интерскол</label>
+          <input type="checkbox" name="manufacturers-select" class="manufacturers-select" id="makita" value="makita" checked>
+          <label for="makita" class="manufacturers-select-label">Makita</label>
+          <input type="checkbox" name="manufacturers-select" class="manufacturers-select" id="dewalt" value="dewalt">
+          <label for="dewalt" class="manufacturers-select-label">Dewalt</label>
+          <input type="checkbox" name="manufacturers-select" class="manufacturers-select" id="hitachi" value="hitachi">
+          <label for="hitachi" class="manufacturers-select-label">Hitachi</label>
+        </section>
+        <section class="section-supply">
+          <h4 class="supply-title">Питание:</h4>
+          <input type="radio" name="supply-select" class="supply-select" id="battery" value="battery" checked>
+          <label for="battery" class="supply-select-label">Аккумуляторные</label>
+          <input type="radio" name="supply-select" class="supply-select" id="power" value="power">
+          <label for="power" class="supply-select-label">Сетевые</label>
+        </section>
+        <input type="submit" name="submit-button" class="submit-button" value="Показать">
       </form>
     </section>
     <section class="sort-section">
@@ -240,7 +238,7 @@
             <a class="footer-link" href="#">Новости</a>
           </li>
           <li class="technomart-item">
-            <a class="footer-link" href="catalog.html">Каталог</a>
+            <a class="footer-link">Каталог</a>
           </li>
           <li class="technomart-item">
             <a class="footer-link" href="#">Доставка</a>
@@ -270,21 +268,22 @@
         <p class="copyright-text">&copy;&nbsp;2010-2017 Компания &laquo;Техномарт&raquo; Все права защищены</p>
       </div>
       <div class="social">
-        <a class="social-link-vk" href="#">VK</a>
-        <a class="social-link-fb" href="#">FB</a>
-        <a class="social-link-instagram" href="#">INST</a>
+        <a class="social-link social-vk" href="#">VK</a>
+        <a class="social-link social-fb" href="#">FB</a>
+        <a class="social-link social-instagram" href="#">INST</a>
       </div>
       <div class="email">
         <p class="email-text">Обратная связь:
           <a class="email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      	</p>
+        </p>
       </div>
       <div class="developer">
         <p class="developer-text">Разработано&nbsp;&mdash;
           <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </p>
+        </p>
       </div>
     </div>
   </footer>
 </body>
+
 </html>
