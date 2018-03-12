@@ -328,26 +328,24 @@
     </div>
   </footer>
   <section class="write-us-popup visually-hidden">
-    <div class="close-button">
-      <button class="close-button-wrapper">X</button>
-    </div>
-    <form class="write-us-form">
-      <div class="write-us-wrapper">
-        <label for="name" class="write-us-title">Ваше имя:</label>
-        <input type="text" name="name" class="name-feedback" id="name">
-      </div>
-      <div class="write-us-wrapper">
-        <label for="e-mail" class="write-us-title">Ваш e-mail:</label>
-        <input type="text" name="e-mail" class="e-mail-feedback" id="e-mail">
-      </div>
-      <div class="write-us-wrapper">
-        <label for="feedback" class="write-us-title">Текст письма:</label>
-        <input type="textarea" name="feedback" class="feedback" id="feedback">
-      </div>
-      <div>
+    <button class="close-button-wrapper">X</button>
+    <div class="write-us-popup-wrapper">
+      <form class="write-us-form" action="#" method="post">
+        <div class="write-us-wrapper">
+          <label for="name" class="text-field-label">Ваше имя:</label>
+          <input type="text" name="name" class="text-field" id="name">
+        </div>
+        <div class="write-us-wrapper">
+          <label for="e-mail" class="e-mail-field-label">Ваш e-mail:</label>
+          <input type="text" name="e-mail" class="e-mail-field" id="e-mail">
+        </div>
+        <div class="write-us-wrapper">
+          <label for="feedback" class="textarea-field-label">Текст письма:</label>
+          <input type="textarea" name="feedback" class="textarea-field" id="feedback">
+        </div>
         <input type="submit" name="submit-button" class="submit-button" value="Отправить">
-      </div>
-    </form>
+      </form>
+    </div>
   </section>
   <section class="map-popup visually-hidden">
     <div class="map-popup-wrapper">
