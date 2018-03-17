@@ -4,16 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="index-body">
   <header class="page-header">
     <div class="header-top">
       <div class="header-logo">
-        <a class="logo-btn">Техномарт</a>
+        <a class="logo-button">Техномарт</a>
       </div>
       <form action="#" method="get" class="search">
         <label class="search-title">
@@ -22,13 +21,13 @@
         </label>
       </form>
       <div class="menu-bookmarks">
-        <a class="header-btn bookmarks" href="#">Закладки: 0</a>
+        <a class="header-button bookmarks" href="#">Закладки: 0</a>
       </div>
       <div class="menu-basket">
-        <a class="header-btn basket" href="#">Корзина: 0</a>
+        <a class="header-button basket" href="#">Корзина: 0</a>
       </div>
       <div class="menu-order">
-        <a class="header-btn order" href="#">Оформить заказ</a>
+        <a class="header-button order" href="#">Оформить заказ</a>
       </div>
     </div>
     <p class="subtitle">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -50,28 +49,28 @@
         </li>
       </ul>
     </div>
-    <nav class="nav-menu">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-item-link">Главная</a>
+    <nav class="navigation-menu">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-item-link">Главная</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-item-link" href="#">Компания</a>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Компания</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-item-link" href="catalog.html">Каталог</a>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="catalog.html">Каталог</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-item-link" href="#">Новости</a>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Новости</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-item-link" href="#">Спецпредложения</a>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Спецпредложения</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-item-link" href="#">Доставка</a>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Доставка</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-item-link" href="#">Контакты</a>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -80,23 +79,33 @@
     <section class="features">
       <div class="features-item materials">
         <h3 class="features-item-title">Материалы</h3>
-        <a class="features-button" href="#">На любой вкус</a>
+        <div class="features-button-block">
+          <a class="features-button" href="#">На любой вкус</a>
+        </div>
       </div>
       <div class="features-item tools">
         <h3 class="features-item-title">Инструмент</h3>
-        <a class="features-button" href="#">На все случаи</a>
+        <div class="features-button-block">
+          <a class="features-button" href="#">На все случаи</a>
+        </div>
       </div>
       <div class="features-item equipment">
         <h3 class="features-item-title">Техника</h3>
-        <a class="features-button" href="#">Для стройки</a>
+        <div class="features-button-block">
+          <a class="features-button" href="#">Для стройки</a>
+        </div>
       </div>
       <div class="features-item discounts">
         <h3 class="features-item-title">Скидки&nbsp;50%</h3>
-        <a class="features-button" href="#">На 350 товаров</a>
+        <div class="features-button-block">
+          <a class="features-button" href="#">На 350 товаров</a>
+        </div>
       </div>
       <div class="features-item delivery">
         <h3 class="features-item-title">Доставка</h3>
-        <a class="features-button" href="#">Бесплатно</a>
+        <div class="features-button-block">
+          <a class="features-button" href="#">Бесплатно</a>
+        </div>
       </div>
     </section>
     <section class="slider">

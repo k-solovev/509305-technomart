@@ -1,153 +1,247 @@
-body {
+@font-face {
+font-family: "Cuprum";
+src: url(fonts/cuprum.woff2);
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Cuprum";
+src: url(fonts/cuprumbold.woff2);
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Cuprum";
+src: url(/fonts/cuprumitalic.woff2);
+font-weight: normal;
+font-style: italic;
+}
+
+@font-face {
+font-family: "Cuprum";
+src: url(/fonts/cuprumbolditalic.woff2);
+font-weight: bold;
+font-style: italic;
+}
+
+@font-face {
+font-family: "PTSans";
+src: url(fonts/ptsans.woff2);
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "PTSans";
+src: url(fonts/ptsansbold.woff2);
+font-weight: normal;
+font-style: normal;
+}
+
+.index-body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  font-weight: 400;
-  color: #000;
+  font-family: 'Cuprum', Arial, sans-serif;
+  color: black;
 
-  background-color: #fff;
+  background-color: white;
 }
 
-a {
-	text-decoration: none;
+.logo-button,
+.header-button,
+.phone-link,
+.user-menu-button,
+.navigation-item-link,
+.features-button {
+  color: white;
+  text-decoration: none;
 }
 
-ul {
-	list-style: none;
+.user-menu-list,
+.navigation-list {
+  list-style: none;
 }
 
 .page-header {
-	background-color: #f3f7f9;
+  background-color: #f3f7f9;
 }
 
 .header-top {
-	font-size: 17px;
-	line-height: 18px;
-	color: #fff;
-	background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+  color: white;
+
+  background-color: #293449;
 }
 
-.header-top a {
-	color: #fff;
+.header-logo {
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
 }
 
-.header-top .header-logo {
-	background-color: #ee3643;
-	border-bottom: 5px solid #b52933;
+.header-logo:hover {
+  background-color: #ca2c37;
+  border-bottom: 5px solid #9a212a;
 }
 
-.header-top .header-logo:hover {
-	background-color: #ca2c37;
-	border-bottom: 5px solid #9a212a;
+.header-logo:focus {
+  background-color: #ba2732;
+  border-bottom: 5px solid #8e1e26;
 }
 
-.header-top .header-logo:focus {
-	background-color: #ba2732;
-	border-bottom: 5px solid #8e1e26;
+.logo-btn {
+  font-size: 24px;
+  line-height: 24px;
 }
 
-.header-top .header-logo .logo-btn {
+.search-bar {
+  background-color: #293449;
+  border-color: #293449;
+}
+
+.search-bar:focus {
+  background-color: white;
+}
+
+.menu-bookmarks:hover,
+.menu-basket:hover {
+  background-color: #212a3a;
+}
+
+.menu-bookmarks:focus,
+.menu-basket:focus {
+  background-color: #161d29;
+}
+
+.menu-order {
+  background-color: #63a63e;
+}
+
+.menu-order:hover {
+  background-color: #5fbb2d;
+}
+
+
+.menu-order:focus {
+  background-color: #518534;
+}
+
+.header-btn:focus {
+  opacity: 0.6;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  font-style: italic;
+}
+
+.phone-wrapper {
+  border: 3px solid #ffffff;
+}
+
+.phone-link {
+  color: #ee3643;
+}
+
+.address-content {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-menu-item {
+  background-color: white;
+}
+
+.user-menu-button {
+  font-size: 21px;
+  line-height: 21px;
+  color: black;
+}
+
+.user-menu-button:hover {
+  color: #ee3643;
+}
+
+.user-menu-button:focus {
+  color: black;
+
+  opacity: 0.3;
+}
+
+.navigation-menu {
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.navigation-item:hover {
+  background-color: #293449;
+}
+
+.navigation-item-link:focus {
+  opacity: 0.5;
+}
+
+.navigation-item-link {
+  color: white;
+}
+
+.features-item-title {
+	color: white;
 	font-size: 24px;
-	line-height: 24px;
+	line-height: 30px;
 }
 
-.header-top .search-bar {
-	background-color: #293449;
-	border-color: #293449;
+.materials {
+	background-color: #ffbf47;
 }
 
-.header-top .search-bar:focus {
-	background-color: #fff;
-	/*тут надо както убрать голубую рамку*/
+.tools {
+	background-color: #3bbce3;
 }
 
-.header-top .menu-bookmarks:hover,
-.header-top .menu-basket:hover {
-	background-color: #212a3a;
+.equipment {
+	background-color: #dc91d8;
 }
 
-.header-top .menu-bookmarks:focus,
-.header-top .menu-basket:focus {
-	background-color: #161d29;
+.discounts {
+	background-color: #8ed78f;
 }
 
-.header-top .menu-order {
-	background-color: #63a63e;
+.delivery {
+	background-color: #ffc047;
+}
+
+.features-button-block {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.features-button-block:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features-button-block:focus {
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 
-.header-top .menu-order:hover {
-	background-color: #5fbb2d;
-}
 
 
-.header-top .menu-order:focus {
-	background-color: #518534;
-}
 
-.header-top .header-btn:focus {
-	opacity: 0.6;
-}
 
-.page-header .subtitle {
-	font-style: italic;
-	font-size: 16px; 
-	line-height: 23px;
-	color: #ee3643;
-}
 
-.phone .phone-wrapper {
-	border: 3px solid #fff;
-}
 
-.phone .phone-wrapper .phone-link {
-	color: #ee3643;
-}
 
-.address .address-content {
-	font-size: 14px;
-	line-height: 24px;
-	color: #32425c;
-}
 
-.user-menu .user-menu-list .user-menu-item {
-	background-color: #fff;
-}
 
-.user-menu-item .user-menu-button {
-	font-size: 21px;
-	line-height: 21px;
-	color: #000;
-}
-
-.user-menu-item .user-menu-button:hover {
-	color: #ee3643;
-}
-
-.user-menu-item .user-menu-button:focus {
-	color: #000;
-	opacity: 0.3;
-}
-
-.nav-menu {
-	background-color: #32425c;
-	border-bottom: 5px solid #293449;
-}
-
-.nav-list .nav-item:hover {
-	background-color: #293449;
-}
-
-.nav-list .nav-item .nav-item-link:focus {
-	opacity: 0.5;
-}
-
-.nav-item .nav-item-link {
-	color: #fff;
-}
 
 
 
