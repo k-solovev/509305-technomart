@@ -59,13 +59,16 @@ font-style: normal;
 .user-menu-button,
 .navigation-item-link,
 .features-button,
-.slider-button {
+.slider-button,
+.current-price {
   color: white;
   text-decoration: none;
 }
 
 .user-menu-list,
-.navigation-list {
+.navigation-list,
+.popular-products-list,
+.manufacturers-list {
   list-style: none;
 }
 
@@ -268,8 +271,122 @@ font-style: normal;
 	text-transform: uppercase;
 }
 
+.actions-button:first-child {
+	background-color: #63a63e;
+}
 
+.actions-button:first-child:hover {
+	background-color: #5fbb2d;
+}
 
+.actions-button:first-child:focus {
+	background-color: #518534;
+}
+
+.buy {
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+}
+
+.actions-button:last-child {
+	background-color: white;
+	border: 3px solid #63a63e;
+}
+
+.actions-button:last-child:hover {
+	border: 3px solid #32425c;
+}
+
+.actions-button:last-child:focus {
+	border: 3px solid #c1c6ce;
+	color: #c1c6ce;
+}
+
+.bookmark {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #32425c;
+}
+
+.products-header {
+	background-color: #f9f5f0;
+}
+
+.popular-products-title {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.popular-products-button-block {
+	background-color: #ee3643;
+}
+
+.popular-products-button {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.popular-item-title {
+	font-family: "PTSans";
+	font-weight: bold;
+}
+
+.old-price {
+	font-family: "PTSans";
+	font-weight: bold;
+	color: #a9a9a9;
+}
+
+.current-price-block {
+	background-color: #ee3643;
+}
+
+.popular-item-wrapper:hover {
+	box-shadow: 0 0 15px 0 black;
+}
+
+.manufacturers-header {
+	background-color: #f9f5f0;	
+}
+
+.manufacturers-title {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.all-manufacturers-block {
+	background-color: #ee3643;
+}
+
+.all-manufacturers-button {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.manufacturer-wrapper {
+	border: 1px solid #eaeaea;
+}
+
+.manufacturer-wrapper:hover {
+	box-shadow: 0 0 15px 0 black;
+}
+
+.manufacturer-wrapper:focus {
+	box-shadow: 0 0 10px 0 black;
+}
+
+.manufacturer-img:focus {
+	opacity: 0.3;
+}
 
 
 
