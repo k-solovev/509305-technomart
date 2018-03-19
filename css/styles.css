@@ -1,46 +1,53 @@
 @font-face {
-font-family: "Cuprum";
-src: url(fonts/cuprum.woff2);
-font-weight: normal;
-font-style: normal;
+	font-family: "Cuprum";
+	src: url('../fonts/cuprum.woff2');
+	src: url('../fonts/cuprum.woff');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-font-family: "Cuprum";
-src: url(fonts/cuprumbold.woff2);
-font-weight: bold;
-font-style: normal;
+	font-family: "Cuprum";
+	src: url('../fonts/cuprumbold.woff2');
+	src: url('../fonts/cuprumbold.woff');
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
-font-family: "Cuprum";
-src: url(/fonts/cuprumitalic.woff2);
-font-weight: normal;
-font-style: italic;
+	font-family: "Cuprum";
+	src: url('..//fonts/cuprumitalic.woff2');
+	src: url('..//fonts/cuprumitalic.woff');
+	font-weight: 400;
+	font-style: italic;
 }
 
 @font-face {
-font-family: "Cuprum";
-src: url(/fonts/cuprumbolditalic.woff2);
-font-weight: bold;
-font-style: italic;
+	font-family: "Cuprum";
+	src: url('..//fonts/cuprumbolditalic.woff2');
+	src: url('..//fonts/cuprumbolditalic.woff');
+	font-weight: 700;
+	font-style: italic;
 }
 
 @font-face {
-font-family: "PTSans";
-src: url(fonts/ptsans.woff2);
-font-weight: normal;
-font-style: normal;
+	font-family: "PTSans";
+	src: url('../fonts/ptsans.woff2');
+	src: url('../fonts/ptsans.woff');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-font-family: "PTSans";
-src: url(fonts/ptsansbold.woff2);
-font-weight: bold;
-font-style: normal;
+	font-family: "PTSans";
+	src: url('../fonts/ptsansbold.woff2');
+	src: url('../fonts/ptsansbold.woff');
+	font-weight: 700;
+	font-style: normal;
 }
 
-.index-body {
+.index-body,
+.inner-page {
   margin: 0;
   padding: 0;
 
@@ -60,7 +67,11 @@ font-style: normal;
 .navigation-item-link,
 .features-button,
 .slider-button,
-.current-price {
+.current-price,
+.credit-button,
+.about-us-button,
+.contact-button,
+.footer-top-link {
   color: white;
   text-decoration: none;
 }
@@ -68,7 +79,12 @@ font-style: normal;
 .user-menu-list,
 .navigation-list,
 .popular-products-list,
-.manufacturers-list {
+.manufacturers-list,
+.services-list,
+.delivery-list,
+.technomart-list,
+.products-list,
+.user-submenu-list {
   list-style: none;
 }
 
@@ -99,9 +115,10 @@ font-style: normal;
   border-bottom: 5px solid #8e1e26;
 }
 
-.logo-btn {
+.logo-button {
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .search-bar {
@@ -111,6 +128,10 @@ font-style: normal;
 
 .search-bar:focus {
   background-color: white;
+}
+
+.basket-fill {
+	background-color: #ee3643;
 }
 
 .menu-bookmarks:hover,
@@ -171,13 +192,31 @@ font-style: normal;
   color: black;
 }
 
+.user-menu-button:focus {
+	opacity: 0.3;
+}
+
+.user-submenu-link {
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+}
+
+.user-submenu-link:hover {
+	color: #ee3643;
+}
+
+.user-submenu-link:focus {
+	color: #32425c;
+	opacity: 0.3;
+}
+
 .user-menu-button:hover {
   color: #ee3643;
 }
 
 .user-menu-button:focus {
   color: black;
-
   opacity: 0.3;
 }
 
@@ -388,18 +427,203 @@ font-style: normal;
 	opacity: 0.3;
 }
 
+.services {
+	background-color: #f4f7f9;
+}
 
+.services-title {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
 
+.services-header-text {
+	font-family: "PTSans";
+	font-size: 13px;
+	line-height: 24px;
+}
 
+.service-button-block {
+	background-color: #32425c;
+}
 
+.service-button-block:hover {
+	background-color: #293449;
+}
 
+.service-button {
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 30px;
+}
 
+.service-info-title {
+	color: #32425c;
+	text-transform: uppercase;
+	font-weight: 400;
+}
 
+.delivery-title {
+	font-size: 36px;
+	line-height: 36px;
+}
 
+.guarantee-title,
+.credit-title {
+	font-size: 36px;
+	line-height: 24px;
+}
 
+.service-info-text {
+	font-size: 13px;
+	line-height: 24px;
+}
 
+.credit-block {
+	background-color: #ff5357;
+}
 
+.credit-button {
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+}
 
+.about-us-title {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.about-us-text {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.delivery-title {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.about-us-block {
+	background-color: #ee3643;
+}
+
+.about-us-button,
+.contact-button {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.address-text {
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+}
+
+.footer-top {
+	background-color: #32425c;
+}
+
+.footer-bottom-link {
+	color: #ffd180;
+	text-decoration: none;
+}
+
+.footer-link {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
+
+.footer-link:focus {
+	opacity: 0.5;
+}
+
+.footer-bottom {
+	background-color: #293449;
+}
+
+.copyright-text {
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+}
+
+/*соц сети*/
+
+.email-text,
+.developer-text {
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+}
+
+.email-link,
+.developer-link {
+	color: #ffd180;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.email-link:hover,
+.developer-link:hover {
+	text-decoration: underline;
+}
+
+.email-link:focus,
+.developer-link:focus {
+	color: #ee3643;
+}
+
+.write-us-popup {
+	border-top: 7px solid #ee3643;
+}
+
+.text-field-label,
+.e-mail-field-label,
+.textarea-field-label {
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.text-field,
+.e-mail-field,
+.textarea-field {
+	border: 2px solid #d7dcde;
+}
+
+.text-field:hover,
+.e-mail-field:hover,
+.textarea-field:hover {
+	border: 2px solid #b5b5b5;
+}
+
+.text-field:focus,
+.e-mail-field:focus,
+.textarea-field:focus {
+	border: 2px solid #ee3643; /*тут какой-то треш выходит, рамка остаетс серая вокруг красной*/
+}
+
+.write-us-bottom {
+	background-color: #f1f1f1;
+}
+
+.submit-button {
+	background-color: #ee3643;
+	color: white;
+	font-family: "Cuprum";
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
 
 
 
