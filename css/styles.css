@@ -236,18 +236,18 @@
   border-bottom: 5px solid #293449;
 }
 
+.navigation-item-link {
+  display: block;
+
+  color: white;
+}
+
 .navigation-item:hover {
   background-color: #293449;
 }
 
 .navigation-item-link:active {
   opacity: 0.5;
-}
-
-.navigation-item-link {
-  display: block;
-
-  color: white;
 }
 
 .features-item-title {
@@ -293,7 +293,7 @@
 }
 
 .slide-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 30px;
   color: white;
@@ -303,7 +303,7 @@
 .slide-text {
   font-size: 18px;
   line-height: 24px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', "Arial", sans-serif;
   color: white;
 }
 
@@ -387,30 +387,14 @@
   background-color: #ee3643;
 }
 
-.popular-products-button:hover,
-.all-manufacturers-button:hover,
-.credit-button:hover,
-.about-us-button:hover,
-.contact-button:hover {
-  background-color: #ca2c37;
-}
-
-.popular-products-button:active,
-.all-manufacturers-button:active,
-.credit-button:active,
-.about-us-button:active,
-.contact-button:active {
-  background-color: #ba2732;
-}
-
 .popular-item-title {
-  font-weight: bold;
-  font-family: 'PTSans', sans-serif;
+  font-weight: 700;
+  font-family: 'PTSans', "Arial", sans-serif;
 }
 
 .old-price {
-  font-weight: bold;
-  font-family: 'PTSans', sans-serif;
+  font-weight: 700;
+  font-family: 'PTSans', "Arial", sans-serif;
   color: #a9a9a9;
 }
 
@@ -470,7 +454,7 @@
 .services-header-text {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PTSans';
+  font-family: 'PTSans' "Arial", sans-serif ;
 }
 
 .service-item {
@@ -541,6 +525,22 @@
   background-color: #ee3643;
 }
 
+.popular-products-button:hover,
+.all-manufacturers-button:hover,
+.credit-button:hover,
+.about-us-button:hover,
+.contact-button:hover {
+  background-color: #ca2c37;
+}
+
+.popular-products-button:active,
+.all-manufacturers-button:active,
+.credit-button:active,
+.about-us-button:active,
+.contact-button:active {
+  background-color: #ba2732;
+}
+
 .address-text {
   font-size: 18px;
   line-height: 24px;
@@ -567,6 +567,7 @@
 
 .footer-link:active {
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .footer-bottom {
@@ -604,6 +605,7 @@
 .email-link:active,
 .developer-link:active {
   color: #ee3643;
+  text-decoration: none;
 }
 
 .write-us-popup {
@@ -629,9 +631,9 @@
   border: 2px solid #b5b5b5;
 }
 
-.text-field:active,
-.e-mail-field:active,
-.textarea-field:active {
+.text-field:focus,
+.e-mail-field:focus,
+.textarea-field:focus {
   border: 2px solid #ee3643;
   outline: none;
 }
@@ -643,7 +645,7 @@
 .submit-button {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', "Arial", sans-serif;
   color: white;
   text-transform: uppercase;
 
@@ -653,7 +655,7 @@
 .breadcrumbs-link {
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', "Arial", sans-serif;
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -681,7 +683,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', "Arial", sans-serif;
 
   background-color: #f7f3ec;
 }
@@ -705,13 +707,13 @@
 .filter-item {
   font-size: 15px;
   line-height: 20px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', "Arial", sans-serif;
 }
 
 .filter .submit-button {
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', "Arial", sans-serif;
   color: black;
   text-transform: uppercase;
 
@@ -721,10 +723,9 @@
 
 .sort-section-title {
   font-weight: 400;
-  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -746,7 +747,6 @@
   color: #ee3643;
 
   border-bottom: none;
-  /************фокус не работает************/
 }
 
 .paginator-link {
@@ -754,7 +754,7 @@
 
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', "Arial", sans-serif;
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -783,7 +783,7 @@
 .punchers-text {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PTSans', "Arial", sans-serif;
 }
 
 .cart-plus {
@@ -803,7 +803,7 @@
 
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', "Arial", sans-serif;
   color: white;
 
   background-color: #ee3643;
@@ -812,7 +812,7 @@
 .continue-purchase {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', "Arial", sans-serif;
 
   background-color: white;
 }
