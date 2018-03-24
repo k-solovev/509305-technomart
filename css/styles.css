@@ -56,7 +56,6 @@
 .inner-page {
   margin: 0;
   padding: 0;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
@@ -102,19 +101,26 @@
 
 .container {
   width: 940px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header-top .container,
+
 .page-header .container,
 .navigation-list,
 .user-menu-list,
 .container .flexbox,
 .features,
 .popular-products-list,
-.manufacturers-list {
+.manufacturers-list,
+.manufacturers-header,
+.products-header {
   display: flex;
   flex-wrap: wrap;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .page-header {
@@ -124,6 +130,7 @@
 }
 
 .header-top {
+  margin-bottom: 32px;
   min-height: 42px;
   font-size: 17px;
   line-height: 18px;
@@ -213,15 +220,10 @@
   background-color: #518534;
 }
 
-.page-header > .container {
-  align-items: center;
-  min-height: 140px;
-}
-
 .subtitle {
   width: 247px;
   min-height: 70px;
-  padding-left: 55px;
+  padding-left: 53px;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -230,11 +232,13 @@
 
 .phone-link {
   display: block;
-  margin: 20px 10px 10px 20px;
-  padding: 10px 10px 11px 71px;
+  margin: 20px 10px 24px 20px;
+  padding: 3px 0 11px 74px;
   color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
 
-  border: 3px solid #ffffff;
+  border: 3px solid white;
 }
 
 .address-content {
@@ -296,10 +300,9 @@
 }
 
 .navigation-menu {
-  width: 940px;
-  margin: 0 auto;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
+  width: 100%;
 }
 
 .navigation-item-link {
@@ -326,6 +329,8 @@
 }
 
 .features-item-title {
+  margin-top: 26px;
+  margin-left: 24px;
   font-size: 24px;
   line-height: 30px;
   color: white;
@@ -359,7 +364,10 @@
 
 .features-button {
   display: block;
-
+  width: 135px;
+  padding: 10px 0;
+  margin-left: 26px;
+  margin-bottom: 22px;
   text-transform: uppercase;
 
   background-color: rgba(0, 0, 0, 0.1);
@@ -451,12 +459,19 @@
   border: 3px solid #c1c6ce;
 }
 
+.popular-products {
+  margin-bottom: 22px;
+}
+
 .products-header {
   background-color: #f9f5f0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .popular-products-title,
 .manufacturers-title {
+  margin-left: 30px;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -465,22 +480,36 @@
 
 .popular-products-button {
   display: block;
-
+  margin-right: 25px;
+  padding: 11px 51px 7px 57px;
   font-size: 14px;
   line-height: 18px;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-
   background-color: #ee3643;
+}
+
+.popular-products-list {
+  justify-content: space-between;
+}
+
+.popular-item {
+  width: 220px;
+  padding-bottom: 18px;
+  border: 1px solid #eaeaea;
 }
 
 .popular-item-title {
   font-weight: 700;
   font-family: 'PTSans', "Arial", sans-serif;
+  padding: 0 24px;
+  text-align: center;
 }
 
 .old-price {
+  margin-left: 77px;
+  margin-right: 40px;
   font-weight: 700;
   font-family: 'PTSans', "Arial", sans-serif;
   color: #a9a9a9;
@@ -488,21 +517,26 @@
 
 .current-price {
   display: block;
-
+  margin-left: 44px;
+  margin-right: 37px;
+  padding: 7px 37px;
   background-color: #ee3643;
 }
 
-.popular-item-wrapper:hover {
+.popular-item:hover {
   box-shadow: 0 0 15px 0 black;
 }
 
 .manufacturers-header {
   background-color: #f9f5f0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .all-manufacturers-button {
   display: block;
-
+  margin-right: 25px;
+  padding: 11px 51px 7px 57px;
   font-size: 14px;
   line-height: 18px;
   color: white;
