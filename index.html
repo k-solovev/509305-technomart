@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Техномарт</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="index-body">
   <header class="page-header">
     <div class="header-top">
-      <div class="container">
+      <div class="container header-top-wrapper">
         <a class="logo-button">Техномарт</a>
         <form action="#" method="get" class="search">
           <input class="search-bar" type="search" name="search-bar" placeholder="Поиск:">
@@ -21,7 +21,7 @@
         <a class="header-button order" href="#">Оформить заказ</a>
       </div>
     </div>
-    <div class="container">
+    <div class="container header-top-wrapper">
       <p class="subtitle">Интернет-магазин
         <br>строительных материалов
         <br> и инструментов для ремонта</p>
@@ -67,8 +67,9 @@
     </div>
   </header>
   <main class="page-main">
+    <div class="container">
     <section class="features">
-      <div class="container">
+
         <div class="features-wrapper">
           <div class="features-item materials">
             <h3 class="features-item-title">Материалы</h3>
@@ -85,20 +86,25 @@
         </div>
         <div class="features-wrapper">
           <section class="slider">
-            <div class="slide">
-              <h2 class="slide-title">Перфораторы</h2>
-              <p class="slide-text">Настоящие мужские игрушки</p>
-              <img src="img/img/slider_1.jpg" class="slider-image" alt="картинка_1" width="620" height="266">
-              <div class="slider-button-block">
-                <a class="slider-button" href="catalog.html">Открыть каталог</a>
-              </div>
+            <input class="slider-radio" type="radio" id="btn-1" name="toggle" checked>
+            <input class="slider-radio" type="radio" id="btn-2" name="toggle">
+            <div class="slider-controls">
+              <label class="slider-arrow-left" for="btn-1">Туда</label>
+              <label class="slider-arrow-right" for="btn-2">Сюда</label>
+              <label class="slider-point-left" for="btn-1">Х</label>
+              <label class="slider-point-right" for="btn-2">Х</label>
+              <a class="slider-button" href="catalog.html">Открыть каталог</a>
             </div>
-            <div class="slide">
-              <h2 class="slide-title">Дрели</h2>
-              <p class="slide-text">Соседям на радость</p>
-              <img src="img/img/slider_2.jpg" class="slider-image" alt="картинка_2" width="620" height="266">
-              <div class="slider-button-block">
-                <a class="slider-button" href="catalog.html">Открыть каталог</a>
+            <div class="slider-inner">
+              <div class="slide">
+                <h2 class="slide-title">Перфораторы</h2>
+                <p class="slide-text">Настоящие мужские игрушки</p>
+                <img src="img/img/slider_1.jpg" class="slider-image" alt="картинка_1" width="620" height="266">
+              </div>
+              <div class="slide">
+                <h2 class="slide-title">Дрели</h2>
+                <p class="slide-text">Соседям на радость</p>
+                <img src="img/img/slider_2.jpg" class="slider-image" alt="картинка_2" width="620" height="266">
               </div>
             </div>
           </section>
@@ -113,10 +119,8 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <section class="popular-products">
-      <div class="container">
         <div class="products-header">
           <h2 class="popular-products-title">Популярные товары:</h2>
           <a class="popular-products-button" href="#">все популярные товары</a>
@@ -170,10 +174,8 @@
             </div>
           </li>
         </ul>
-      </div>
     </section>
     <section class="manufacturers">
-      <div class="container">
         <div class="manufacturers-header">
           <h2 class="manufacturers-title">Популярные производители:</h2>
           <a class="all-manufacturers-button" href="#">Все производители</a>
@@ -236,8 +238,8 @@
             </div>
           </li>
         </ul>
-      </div>
     </section>
+  </div>
     <section class="services">
       <div class="container">
         <div class="services-header">
@@ -324,7 +326,7 @@
   </main>
   <footer class="page-footer">
     <div class="footer-top">
-      <div class="container">
+      <div class="container footer-top-wrapper">
         <a class="footer-logo">Техномарт</a>
         <section class="address">
           <p class="address-text">г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
@@ -366,7 +368,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container">
+      <div class="container footer-bottom-wrapper">
         <p class="copyright-text">&copy;&nbsp;2010-2017 Компания &laquo;Техномарт&raquo;
           <br> Все права защищены
         </p>

@@ -109,17 +109,18 @@
   margin-right: auto;
 }
 
-.page-header .container,
+.page-header .header-top-wrapper,
 .navigation-list,
 .user-menu-list,
+.user-submenu-list,
 .features-wrapper,
 .popular-products-list,
 .manufacturers-list,
 .manufacturers-header,
 .products-header,
 .about-us,
-.footer-bottom .container,
-.footer-top .container,
+.footer-bottom .footer-bottom-wrapper,
+.footer-top .footer-top-wrapper,
 .technomart-list,
 .products-list,
 .services-slider,
@@ -140,6 +141,9 @@
   background-color: #f3f7f9;
   padding-bottom: 60px;
   margin-bottom: 60px;
+}
+.inner-page .page-header {
+  margin-bottom: 20px;
 }
 
 .header-top {
@@ -252,8 +256,8 @@
 
 .phone-link {
   display: block;
-  margin: 20px 10px 24px 20px;
-  padding: 3px 0 11px 74px;
+  margin: 14px 20px;
+  padding: 9px 63px;
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
@@ -298,6 +302,14 @@
   opacity: 0.3;
 }
 
+.inner-page .user-menu-list {
+  display: block;
+}
+
+.header-contacts {
+  margin-bottom: 13px;
+}
+
 .user-submenu-link {
   font-size: 16px;
   line-height: 18px;
@@ -331,16 +343,16 @@
   color: white;
 }
 
-.navigation-link:hover {
+.navigation-item-link:hover {
   background-color: #293449;
 }
 
-.navigation-link:active {
+.navigation-item-link:active {
   opacity: 0.5;
 }
 
 .features {
-  margin-bottom: 33px;
+  margin-bottom: 55px;
 }
 
 .features-item {
@@ -349,7 +361,7 @@
 }
 
 .features-item-title {
-  margin-top: 0;
+  margin-top: -4px;
   margin-bottom: 8px;
   padding-top: 25px;
   padding-left: 24px;
@@ -392,8 +404,9 @@
   font-size: 14px;
   line-height: 18px;
   display: inline-block;
+  text-align: center;
   width: 135px;
-  padding: 10px 0;
+  padding: 12px 0;
   margin-left: 26px;
   margin-bottom: 22px;
   text-transform: uppercase;
@@ -411,7 +424,7 @@
 
 .slide-title {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 20px;
   font-weight: 700;
   font-size: 36px;
@@ -432,27 +445,80 @@
 }
 
 .slider {
-  position: relative;
   margin-right: 20px;
   flex-basis: 620px;
   height: 266px;
   overflow: hidden;
+  position: relative;
 }
 
-.slider-button-block {
-  background-color: #ee3643;
+.slider-radio {
+  display: none;
 }
 
-.slider-button-block:hover {
-  background-color: #ca2c37;
+.slider-arrow-left,
+.slider-arrow-right,
+.slider-point-left,
+.slider-point-right {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.slider-button-block:active {
-  background-color: #ba2732;
+.slider-arrow-left {
+  top: 120px;
+  left: 30px;
+}
+
+.slider-arrow-right {
+  top: 130px;
+  right: 30px;
+}
+
+.slider-point-left {
+  bottom: 10px;
+  left: 300px;
+}
+
+.slider-point-right {
+  bottom: 10px;
+  left: 330px;
+}
+
+.slider-inner {
+  width: 300%;
+  display: flex;
+}
+
+.slide {
+  position: relative;
+}
+
+#btn-1:checked ~ .slider-inner { 
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner { 
+  transform: translate(-620px);
 }
 
 .slider-button {
+  position: absolute;
+  bottom: 23px;
+  left: 25px;
+  z-index: 1;
+  padding: 8px 40px;
+  display: inline-block;
+  background-color: #ee3643;
   text-transform: uppercase;
+}
+
+.slider-button:hover {
+  background-color: #ca2c37;
+}
+
+.slider-button:active {
+  background-color: #ba2732;
 }
 
 .buy {
@@ -503,11 +569,12 @@
   background-color: #f9f5f0;
   justify-content: space-between;
   align-items: center;
+  padding: 0 25px;
+  margin-bottom: 25px;
 }
 
 .popular-products-title,
 .manufacturers-title {
-  margin-left: 30px;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -515,9 +582,8 @@
 }
 
 .popular-products-button {
-  display: block;
-  margin-right: 25px;
-  padding: 11px 51px 7px 57px;
+  display: inline-block;
+  padding: 10px 54px;
   font-size: 14px;
   line-height: 18px;
   color: white;
@@ -568,6 +634,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  padding: 0 25px;
 }
 
 .all-manufacturers-button {
@@ -633,6 +700,7 @@
 
 .services-title {
   font-weight: 400;
+  margin-top: 60px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -647,7 +715,7 @@
 
 .service-item {
   background-color: #32425c;
-  padding: 10px;
+  padding: 16px 22px;
 }
 
 .service-item:hover {
@@ -755,6 +823,10 @@
 
 .address {
   order: 2;
+}
+
+.manufacturers {
+  padding-bottom: 25px;
 }
 
 .products-list {
@@ -917,7 +989,8 @@
 
 .drills-title {
   display: block;
-  padding: 30px;
+  width: 100%;
+  padding: 8px 25px;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -927,11 +1000,15 @@
   background-color: #f2f6f8;
 }
 
+.page-main-wrapper {
+  width: 100%;
+}
+
 .sort-section {
   background-color: #f7f3ec;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-right: 25px;
   padding-left: 25px;
 }
 
