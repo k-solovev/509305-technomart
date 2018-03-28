@@ -22,9 +22,7 @@
       </div>
     </div>
     <div class="container header-top-wrapper">
-      <p class="subtitle">Интернет-магазин
-        <br>строительных материалов
-        <br> и инструментов для ремонта</p>
+      <p class="subtitle">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <section class="header-contacts">
         <a class="phone-link" href="tel:+7(812)555-05-55">+7(812) 555-05-55</a>
         <p class="address-content">г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
@@ -86,8 +84,8 @@
         </div>
         <div class="features-wrapper">
           <section class="slider">
-            <input class="slider-radio" type="radio" id="btn-1" name="toggle" checked>
-            <input class="slider-radio" type="radio" id="btn-2" name="toggle">
+            <input class="slider-radio-1" type="radio" id="btn-1" name="toggle" checked>
+            <input class="slider-radio-2" type="radio" id="btn-2" name="toggle">
             <div class="slider-controls">
               <label class="slider-arrow-left" for="btn-1">Туда</label>
               <label class="slider-arrow-right" for="btn-2">Сюда</label>
@@ -244,52 +242,33 @@
       <div class="container">
         <div class="services-header">
           <h2 class="services-title">Сервисы</h2>
-          <p class="services-header-text">Хороший магазин отличается от&nbsp;плохого не&nbsp;только ценами!
-            <br> Мы&nbsp;стараемся изо всех сил,чтобы сделать ваши покупки приятными.</p>
+          <p class="services-header-text">Хороший магазин отличается от&nbsp;плохого не&nbsp;только ценами! Мы&nbsp;стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
+
         <div class="services-slider">
-          <ul class=services-list>
-            <li class="service-item">
-              <a class="service-button" href="#">Доставка</a>
-            </li>
-            <li class="service-item">
-              <a class="service-button" href="#">Гарантия</a>
-            </li>
-            <li class="service-item">
-              <a class="service-button" href="#">Кредит</a>
-            </li>
-          </ul>
-          <section class="service-info-delivery">
-            <div class="service-info-wrapper">
+          <input class="services-radio-1" type="radio" name="toggle" checked id="services-radio-1">
+          <input class="services-radio-2" type="radio" name="toggle" id="services-radio-2">
+          <input class="services-radio-3" type="radio" name="toggle" id="services-radio-3">
+          <div class="services-slider-controls">
+            <label for="services-radio-1" class="service-item">Доставка</label>
+            <label for="services-radio-2" class="service-item">Гарантия</label>
+            <label for="services-radio-3" class="service-item">Кредит</label>
+          </div>
+          <div class="services-slider-inner">
+            <div class="service-info-delivery">
               <h2 class="service-info-title">Доставка</h2>
-              <p class="service-info-text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо
-                <br> к&nbsp;вашему подъезду совершенно бесплатно!
-                <br> Ведь мы&nbsp;неплохо заработаем,
-                <br> поднимая его на&nbsp;ваш этаж!</p>
+              <p class="service-info-text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж!</p>
             </div>
-            <div class="service-info-wrapper">
-              <img src="img/img/delivery_img.png" class="service-img" alt="Доставка" width="468" height="261">
-            </div>
-          </section>
-          <section class="service-info-guarantee">
-            <div class="service-info-wrapper">
+            <div class="service-info-guarantee">
               <h2 class="service-info-title">Гарантия</h2>
               <p class="service-info-text">Если купленный у&nbsp;нас товар поломается или заискрит, а&nbsp;также в&nbsp;случае пожара, спровоцированого его возгоранием, вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии. Мы&nbsp;обменяем сгоревший товар на&nbsp;новый. Дом уж&nbsp;восстановите как-нибудь сами.</p>
             </div>
-            <div class="service-info-wrapper">
-              <img src="img/img/guarantee_img.png" class="service-img" alt="Гарантия" width="389" height="283">
-            </div>
-          </section>
-          <section class="service-info-credit">
-            <div class="service-info-wrapper">
+            <div class="service-info-credit">
               <h2 class="service-info-title">Кредит</h2>
               <p class="service-info-text">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты придут вам на&nbsp;помощь.</p>
+              <a class="credit-button" href="#">Отправить заявку</a>
             </div>
-            <a class="credit-button" href="#">Отправить заявку</a>
-            <div class="service-info-wrapper">
-              <img src="img/img/credit_img.png" class="service-img" alt="Кредит" width="465" height="285">
-            </div>
-          </section>
+          </div>
         </div>
       </div>
     </section>
@@ -298,9 +277,9 @@
         <div class="about-us-wrapper">
           <h2 class="about-us-title">Компания &laquo;Техномарт&raquo;</h2>
           <p class="about-us-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-            <br>&nbsp;строительства не&nbsp;оставит равнодушным любителей сэкономить на&nbsp;гастарбайтерах.</p>
+            &nbsp;строительства не&nbsp;оставит равнодушным любителей сэкономить на&nbsp;гастарбайтерах.</p>
           <p class="about-us-text">Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдалнные точки России!
-            <br> Техномарт работает со&nbsp;многими транспортными компаниями:</p>
+             Техномарт работает со&nbsp;многими транспортными компаниями:</p>
           <ul class="delivery-list">
             <li class="delivery-item">
               <h3 class="delivery-title">Деловые линии</h3>
@@ -317,9 +296,11 @@
         <section class="about-us-contacts">
           <h2 class="about-us-title">Контакты</h2>
           <p class="about-us-text">Вы&nbsp;можете забрать товар сами,
-            <br> заехав в&nbsp;наш офис:</p>
+             заехав в&nbsp;наш офис:</p>
           <img src="img/img/map.jpg" alt="Мини-карта" width="300" height="158">
-          <a class="contact-button" href="#">Заблудились? Пишите нам!</a>
+          <div class="contact-button-wrapper">
+            <a class="contact-button" href="#">Заблудились? Пишите нам!</a>
+          </div>
         </section>
       </section>
     </div>
@@ -370,7 +351,7 @@
     <div class="footer-bottom">
       <div class="container footer-bottom-wrapper">
         <p class="copyright-text">&copy;&nbsp;2010-2017 Компания &laquo;Техномарт&raquo;
-          <br> Все права защищены
+           Все права защищены
         </p>
         <div class="social">
           <a class="social-link social-vk" href="#">VK</a>
@@ -378,11 +359,11 @@
           <a class="social-link social-instagram" href="#">INST</a>
         </div>
         <p class="email-text">Обратная связь:
-          <br>
+          
           <a class="email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="developer-text">Разработано&nbsp;&mdash;
-          <br>
+          
           <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
