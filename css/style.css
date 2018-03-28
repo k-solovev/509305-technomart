@@ -201,6 +201,12 @@
   padding-top: 10px;
 }
 
+.bookmarks:before {
+  content: "";
+  width: 14px;
+  height: 17px;
+}
+
 .basket {
   width: 100px;
   padding-left: 50px;
@@ -800,6 +806,7 @@
 
 .service-info-delivery {
   display: none;
+  background-color: #00b2fe;
   background-image: url("../img/img/delivery_img.png");
   background-repeat: no-repeat;
   background-position: 156px 20px;
@@ -809,6 +816,7 @@
 
 .service-info-guarantee {
   display: none;
+  background-color: #f0ede1;
   background-image: url("../img/img/guarantee_img.png");
   background-repeat: no-repeat;
   background-position: 156px 20px;
@@ -818,6 +826,7 @@
 
 .service-info-credit {
   display: none;
+  background-color: #ecf4f2;
   background-image: url("../img/img/credit_img.png");
   background-repeat: no-repeat;
   background-position: 156px 20px;
