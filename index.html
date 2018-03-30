@@ -14,6 +14,9 @@
       <div class="container header-top-wrapper">
         <a class="logo-button">Техномарт</a>
         <form action="#" method="get" class="search">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+          </svg>
           <input class="search-bar" type="search" name="search-bar" placeholder="Поиск:">
         </form>
         <a class="header-button bookmarks" href="#">Закладки: 0</a>
@@ -30,10 +33,15 @@
       <div class="user-menu">
         <ul class="user-menu-list">
           <li class="user-menu-item">
-            <a class="user-menu-button" href="#">Войти</a>
+            <a class="user-menu-button enter" href="#">
+              <svg class="enter-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
+                <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+              </svg>
+              Войти</a>
           </li>
           <li class="user-menu-item">
-            <a class="user-menu-button" href="#">Регистрация</a>
+            <a class="user-menu-button registration" href="#">Регистрация</a>
           </li>
         </ul>
       </div>
@@ -66,8 +74,7 @@
   </header>
   <main class="page-main">
     <div class="container">
-    <section class="features">
-
+      <section class="features">
         <div class="features-wrapper">
           <div class="features-item materials">
             <h3 class="features-item-title">Материалы</h3>
@@ -87,10 +94,10 @@
             <input class="slider-radio-1" type="radio" id="btn-1" name="toggle" checked>
             <input class="slider-radio-2" type="radio" id="btn-2" name="toggle">
             <div class="slider-controls">
-              <label class="slider-arrow-left" for="btn-1">Туда</label>
-              <label class="slider-arrow-right" for="btn-2">Сюда</label>
-              <label class="slider-point-left" for="btn-1">Х</label>
-              <label class="slider-point-right" for="btn-2">Х</label>
+              <label class="slider-arrow-left" for="btn-1"></label>
+              <label class="slider-arrow-right" for="btn-2"></label>
+              <label class="slider-point-left" for="btn-1"></label>
+              <label class="slider-point-right" for="btn-2"></label>
               <a class="slider-button" href="catalog.html">Открыть каталог</a>
             </div>
             <div class="slider-inner">
@@ -117,15 +124,15 @@
             </div>
           </div>
         </div>
-    </section>
-    <section class="popular-products">
+      </section>
+      <section class="popular-products">
         <div class="products-header">
           <h2 class="popular-products-title">Популярные товары:</h2>
           <a class="popular-products-button" href="#">все популярные товары</a>
         </div>
         <ul class="popular-products-list">
           <li class="popular-item">
-            <div class="actions visually-hidden">
+            <div class="actions">
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В&nbsp;закладки</a>
             </div>
@@ -137,7 +144,7 @@
             </div>
           </li>
           <li class="popular-item">
-            <div class="actions visually-hidden">
+            <div class="actions">
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В&nbsp;закладки</a>
             </div>
@@ -149,7 +156,7 @@
             </div>
           </li>
           <li class="popular-item">
-            <div class="actions visually-hidden">
+            <div class="actions">
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В&nbsp;закладки</a>
             </div>
@@ -161,19 +168,20 @@
             </div>
           </li>
           <li class="popular-item">
-            <div class="actions visually-hidden">
+            <div class="actions">
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В&nbsp;закладки</a>
             </div>
             <div class="popular-item-wrapper">
+              <div class="new-flag"></div>
               <img src="img/img/perf_2.png" class="popular-item-image" alt="Бош БФГ 3000" width="220" height="150">
               <h3 class="popular-item-title">Перфоратор BOSCH BFG 2000</h3>
               <ins class="current-price">12&nbsp;500&nbsp;Р.</ins>
             </div>
           </li>
         </ul>
-    </section>
-    <section class="manufacturers">
+      </section>
+      <section class="manufacturers">
         <div class="manufacturers-header">
           <h2 class="manufacturers-title">Популярные производители:</h2>
           <a class="all-manufacturers-button" href="#">Все производители</a>
@@ -236,23 +244,22 @@
             </div>
           </li>
         </ul>
-    </section>
-  </div>
+      </section>
+    </div>
     <section class="services">
       <div class="container">
         <div class="services-header">
           <h2 class="services-title">Сервисы</h2>
           <p class="services-header-text">Хороший магазин отличается от&nbsp;плохого не&nbsp;только ценами! Мы&nbsp;стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-
         <div class="services-slider">
           <input class="services-radio-1" type="radio" name="toggle" checked id="services-radio-1">
           <input class="services-radio-2" type="radio" name="toggle" id="services-radio-2">
           <input class="services-radio-3" type="radio" name="toggle" id="services-radio-3">
           <div class="services-slider-controls">
-            <label for="services-radio-1" class="service-item">Доставка</label>
-            <label for="services-radio-2" class="service-item">Гарантия</label>
-            <label for="services-radio-3" class="service-item">Кредит</label>
+            <label class="service-item service-delivery" for="services-radio-1">Доставка</label>
+            <label class="service-item service-guarantee" for="services-radio-2">Гарантия</label>
+            <label class="service-item service-credit" for="services-radio-3">Кредит</label>
           </div>
           <div class="services-slider-inner">
             <div class="service-info-delivery">
@@ -276,10 +283,8 @@
       <section class="about-us">
         <div class="about-us-wrapper">
           <h2 class="about-us-title">Компания &laquo;Техномарт&raquo;</h2>
-          <p class="about-us-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-            &nbsp;строительства не&nbsp;оставит равнодушным любителей сэкономить на&nbsp;гастарбайтерах.</p>
-          <p class="about-us-text">Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдалнные точки России!
-             Техномарт работает со&nbsp;многими транспортными компаниями:</p>
+          <p class="about-us-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и &nbsp;строительства не&nbsp;оставит равнодушным любителей сэкономить на&nbsp;гастарбайтерах.</p>
+          <p class="about-us-text">Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдалнные точки России! Техномарт работает со&nbsp;многими транспортными компаниями:</p>
           <ul class="delivery-list">
             <li class="delivery-item">
               <h3 class="delivery-title">Деловые линии</h3>
@@ -295,8 +300,7 @@
         </div>
         <section class="about-us-contacts">
           <h2 class="about-us-title">Контакты</h2>
-          <p class="about-us-text">Вы&nbsp;можете забрать товар сами,
-             заехав в&nbsp;наш офис:</p>
+          <p class="about-us-text">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис:</p>
           <img src="img/img/map.jpg" alt="Мини-карта" width="300" height="158">
           <div class="contact-button-wrapper">
             <a class="contact-button" href="#">Заблудились? Пишите нам!</a>
@@ -350,20 +354,23 @@
     </div>
     <div class="footer-bottom">
       <div class="container footer-bottom-wrapper">
-        <p class="copyright-text">&copy;&nbsp;2010-2017 Компания &laquo;Техномарт&raquo;
-           Все права защищены
+        <p class="copyright-text">&copy;&nbsp;2010-2017 Компания &laquo;Техномарт&raquo; Все права защищены
         </p>
         <div class="social">
-          <a class="social-link social-vk" href="#">VK</a>
-          <a class="social-link social-fb" href="#">FB</a>
-          <a class="social-link social-instagram" href="#">INST</a>
+          <a class="social-link social-vk" href="#">
+          <span class="visually-hidden">VK</span>
+          </a>
+          <a class="social-link social-fb" href="#">
+          <span class="visually-hidden">FB</span>
+          </a>
+          <a class="social-link social-instagram" href="#">
+          <span class="visually-hidden">INST</span>
+          </a>
         </div>
         <p class="email-text">Обратная связь:
-          
           <a class="email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="developer-text">Разработано&nbsp;&mdash;
-          
           <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
