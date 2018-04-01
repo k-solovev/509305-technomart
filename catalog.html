@@ -14,10 +14,10 @@
       <div class="container header-top-wrapper">
         <a class="logo-button" href="index.html">Техномарт</a>
         <form action="#" method="get" class="search">
+          <input class="search-bar" type="search" name="search-bar" placeholder="Поиск:">
           <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
             <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
           </svg>
-          <input class="search-bar" type="search" name="search-bar" placeholder="Поиск:">
         </form>
         <a class="header-button bookmarks" href="#">Закладки: 0</a>
         <a class="header-button basket" href="#">Корзина: 10</a>
@@ -25,8 +25,7 @@
       </div>
     </div>
     <div class="container header-top-wrapper">
-      <p class="subtitle">Интернет-магазин строительных материалов
-        и&nbsp;инструментов для ремонта</p>
+      <p class="subtitle">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
       <section class="header-contacts">
         <a class="phone-link" href="tel:+7(812)555-05-55">+7(812) 555-05-55</a>
         <p class="address-content">г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
@@ -326,9 +325,7 @@
     <section class="punchers">
       <div class="container">
         <h2 class="punchers-title">Пара слов о&nbsp;перфораторах</h2>
-        <p class="punchers-text">Перфоратор&nbsp;&mdash; универсальный строительный инструмент. Предназначен для сверления и&nbsp;долбления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне
-          Существуют&nbsp;электромеханические и&nbsp;пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и&nbsp;отбойного молотка. В&nbsp;
-          ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в&nbsp;одном устройстве будут совмещены отбойный молоток и&nbsp;ударная дрель.</p>
+        <p class="punchers-text">Перфоратор&nbsp;&mdash; универсальный строительный инструмент. Предназначен для сверления и&nbsp;долбления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне Существуют&nbsp;электромеханические и&nbsp;пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и&nbsp;отбойного молотка. В&nbsp; ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в&nbsp;одном устройстве будут совмещены отбойный молоток и&nbsp;ударная дрель.</p>
       </div>
     </section>
   </main>
@@ -400,11 +397,14 @@
     </div>
   </footer>
   <section class="cart-plus visually-hidden">
-    <button class="close-button-wrapper" type="button">X</button>
-    <p class="cart-plus-content">Товар добавлен в корзину!</p>
-    <div class="cart-plus-buttons">
-      <a class="make-order" href="#">Оформить заказ</a>
-      <button class="continue-purchase" type="button">Продолжить покупки</button>
+    <div class="mini-container cart-plus-top">
+      <p class="cart-plus-content">Товар добавлен в корзину!</p>
+    </div>
+    <div class="cart-plus-bottom">
+      <div class="mini-container cart-plus-bottom-wrapper">
+        <a class="make-order" href="#">Оформить заказ</a>
+        <button class="continue-purchase" type="button">Продолжить покупки</button>
+      </div>
     </div>
   </section>
 </body>
