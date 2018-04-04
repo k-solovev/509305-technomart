@@ -585,7 +585,7 @@
 }
 
 .navigation-item:last-child .navigation-item-link {
-  padding-right: 53px;
+  padding-right: 52px;
 }
 
 .navigation-item-link:hover {
@@ -889,7 +889,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300%;
+  width: 100%;
 }
 
 .slide {
@@ -1210,15 +1210,6 @@
   border-radius: 4px;
 }
 
-.manufacturer-wrapper {
-  position: relative;
-
-  width: 218px;
-  min-height: 145px;
-
-  border: 1px solid #eaeaea;
-}
-
 .manufacturer-icon {
   display: block;
   width: 100%;
@@ -1240,23 +1231,24 @@
 .manufacturer-item {
   margin-right: 20px;
   margin-bottom: 20px;
+  position: relative;
+  box-sizing: border-box;
+  width: 220px;
+  min-height: 144px;
+
+  border: 1px solid #eaeaea;
 }
 
-.manufacturer-item:nth-child(4) {
+.manufacturer-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.manufacturer-item:last-child {
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-.manufacturer-wrapper:hover {
+.manufacturer-item:hover {
   -webkit-box-shadow: 0 10px 25px rgba(41,52,73,0.5);
           box-shadow: 0 10px 25px rgba(41,52,73,0.5);
 }
 
-.manufacturer-wrapper:active {
+.manufacturer-item:active {
   -webkit-box-shadow: 0 4px 10px rgba(41,52,73,0.5);
           box-shadow: 0 4px 10px rgba(41,52,73,0.5);
 }
@@ -1433,12 +1425,6 @@
   background-color: white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-}
-
-.service-info-delivery,
-.service-info-guarantee,
-.service-info-credit {
-  padding-right: 300px;
 }
 
 .credit-button {
@@ -1982,7 +1968,7 @@
   margin-bottom: 13px;
 }
 
-.manufacturers-item,
+.inner-page .manufacturers-item,
 .supply-item {
   margin-bottom: 17px;
 }
@@ -2085,7 +2071,7 @@
 .max-price-input {
   width: 95px;
   padding: 10px 0;
-
+  font-size: 17px;
   text-align: center;
 
   background-color: #f7f3ec;
