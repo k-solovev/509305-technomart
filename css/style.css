@@ -66,6 +66,24 @@
   background-color: white;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .logo-button,
 .footer-logo,
 .header-button,
@@ -146,6 +164,15 @@
 
 .visually-hidden {
   display: none;
+}
+
+.modal-off {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .page-header {
@@ -2393,7 +2420,10 @@
 }
 
 .write-us-popup {
-  position: relative;
+  position: fixed;
+  top: 90px;
+  left: 25%;
+  background-color: white;
 
   -webkit-box-sizing: border-box;
 
@@ -2415,7 +2445,18 @@
   border-radius: 3px;
 }
 
-.write-us-popup::before {
+.close-modal {
+  position: absolute;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 5px;
+}
+
+.close-modal::before {
   content: '';
   position: absolute;
   top: 15px;
@@ -2430,7 +2471,7 @@
           transform: rotate(45deg);
 }
 
-.write-us-popup::after {
+.close-modal::after {
   content: '';
   position: absolute;
   top: 15px;
@@ -2468,7 +2509,9 @@
 }
 
 .map-popup {
-  position: relative;
+  position: fixed;
+  top: 70px;
+  left: 15%;
 
   width: 940px;
   min-height: 446px;
@@ -2476,36 +2519,6 @@
   -webkit-box-shadow: 0 3px 15px;
 
           box-shadow: 0 3px 15px;
-}
-
-.map-popup::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 5px;
-
-  width: 20px;
-  height: 3px;
-
-  background-color: #ee3643;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.map-popup::after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 5px;
-
-  width: 20px;
-  height: 3px;
-
-  background-color: #ee3643;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .cart-plus {
@@ -2576,3 +2589,4 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+

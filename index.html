@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Техномарт</title>
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="index-body">
@@ -294,7 +294,9 @@
         <section class="about-us-contacts">
           <h2 class="about-us-title">Контакты</h2>
           <p class="about-us-text">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис:</p>
-          <img src="img/img/map.jpg" alt="Мини-карта" width="300" height="158">
+          <a class="open-map" href="#" alt="Открыть карту">
+            <img src="img/img/map.jpg" alt="Мини-карта" width="300" height="158">
+          </a>
           <div class="contact-button-wrapper">
             <a class="contact-button" href="#">Заблудились? Пишите нам!</a>
           </div>
@@ -369,7 +371,8 @@
       </div>
     </div>
   </footer>
-  <section class="write-us-popup visually-hidden">
+  <section class="write-us-popup modal-off">
+    <button class="close-modal" type="button"></button>
     <div class="popup">
       <form class="write-us-form" action="#" method="post">
         <div class="write-us-wrapper">
@@ -400,9 +403,38 @@
       </div>
     </div>
   </section>
-  <section class="map-popup visually-hidden">
+  <section class="map-popup modal-off">
+    <button class="close-modal" type="button"></button>
     <img src="img/img/map_popup.jpg" class="map-popup-img" alt="Карта" width="940" height="446">
   </section>
-</body>
+  <script type="text/javascript">
+    var link = document.querySelector(".contact-button");
+    var link_map = document.querySelector(".open-map");
+    var write_us = document.querySelector(".write-us-popup");
+    var map = document.querySelector(".map-popup");
+    var close = write_us.querySelector(".close-modal");
+    var close_map = document.querySelector(".map-popup .close-modal");
 
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      write_us.classList.add("modal-show");
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      write_us.classList.remove("modal-show");
+    });
+
+    link_map.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      map.classList.add("modal-show");
+    });
+
+    close_map.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      map.classList.remove("modal-show");
+    });
+
+  </script>
+</body>
 </html>
