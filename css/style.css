@@ -2555,6 +2555,18 @@
           box-shadow: 0 3px 15px;
 }
 
+.open-map {
+  margin: 0;
+  
+}
+
+.open-map iframe {
+  position: absolute;
+  z-index: 2;
+
+  border: none;
+}
+
 .map-popup iframe {
   position: relative;
   z-index: 2;

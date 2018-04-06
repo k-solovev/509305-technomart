@@ -5,6 +5,8 @@
     var close = write_us.querySelector(".close-modal");
     var close_map = document.querySelector(".map-popup .close-modal");
 
+
+
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
       write_us.classList.add("modal-show");
