@@ -66,21 +66,47 @@
   background-color: white;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -172,7 +198,8 @@
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .page-header {
@@ -1259,7 +1286,8 @@
   margin-right: 20px;
   margin-bottom: 20px;
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 220px;
   min-height: 144px;
 
@@ -2422,8 +2450,10 @@
 .write-us-popup {
   position: fixed;
   top: 90px;
-  left: 25%;
+  left: 50%;
+  margin-left: -300px;
   background-color: white;
+  z-index: 100;
 
   -webkit-box-sizing: border-box;
 
@@ -2449,6 +2479,7 @@
   position: absolute;
   cursor: pointer;
   background-color: white;
+  z-index: 3;
   border: none;
   width: 30px;
   height: 30px;
@@ -2498,6 +2529,7 @@
 .textarea-field {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "PTSans", "Arial", sans-serif;
   width: 100%;
   min-height: 110px;
   margin-bottom: 40px;
@@ -2510,9 +2542,11 @@
 
 .map-popup {
   position: fixed;
-  top: 70px;
-  left: 15%;
-
+  background-color: white;
+  top: 100px;
+  left: 50%;
+  z-index: 100;
+  margin-left: -470px;
   width: 940px;
   min-height: 446px;
 
@@ -2521,11 +2555,28 @@
           box-shadow: 0 3px 15px;
 }
 
-.cart-plus {
+.map-popup iframe {
   position: relative;
+  z-index: 2;
 
+  border: none;
+}
+
+.map-popup .map-popup-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.cart-plus {
+  position: fixed;
+  background-color: white;
   width: 620px;
   min-height: 284px;
+  z-index: 100;
 
   -webkit-box-shadow: 0 20px 40px 0;
 
@@ -2589,4 +2640,3 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
