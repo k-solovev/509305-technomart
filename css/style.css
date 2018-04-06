@@ -2487,6 +2487,10 @@
   right: 5px;
 }
 
+.interactive-map {
+  border-width: 1px;
+}
+
 .close-modal::before {
   content: '';
   position: absolute;
