@@ -2,8 +2,7 @@
 
 Технологии используемые в проекте:
 
-HTML
-CSS
-Git
-Javascript
-БЭМ
+- HTML
+- CSS
+- Git
+- Javascript
